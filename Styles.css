@@ -155,11 +155,7 @@ p{
     border-bottom: dashed 2px #432e63;
     color: #906fc8;
   }
- 
-.social-media{
-    margin-top: 50px;
-  }
-  
+
  
   #education{
     color:#173b6c;
@@ -239,7 +235,34 @@ p{
     background: #f6f6f6; 
   }
 
-  .footer img{
-    max-width: 100%;
-    height: auto;
+  .footer h1{
+    font-family: serif;
+    text-transform: uppercase;
+    position: relative; 
+    text-align: center; 
+    color: #ac1163 !important;
+    font-size: 70px;
+    text-shadow: 1px 1px 0px #b393d3;
+    border: 3px solid #ac1163;
+    border-radius: 100px;
   }
+
+ .footer a{
+  display: inline-block;
+  color: #ac1163;
+  padding: 4px 12px;
+  font-size: 18px;
+  border: 1px solid;
+  margin-right: 20px;
+  border-radius: 5px;
+  background-color: white;
+ }
+
+ #footerAddress h2{
+   color: #ac1163;  
+   font-family: Allura, cursive;
+ }
+
+ #footerAddress p{
+  color:black;
+ }
