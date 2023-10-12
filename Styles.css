@@ -244,6 +244,12 @@ p{
     border-radius: 100px;
   }
 
+  .social-media-list{
+    border: dashed 1px #fff;
+    padding: 10px;
+    background-color: #ac1163;
+  }
+
  .footer a{
   display: inline-block;
   color: #ac1163;
