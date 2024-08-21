@@ -4,8 +4,13 @@
   top: 0px;
 }
 
-.nav-link{  
+/* .nav-link{  
   color: white;
+} */
+
+.nav-link:hover{
+ background-color:#cc1573;
+ transition-duration: 500ms;
 }
 
 .bg_gradients2_sticky {
