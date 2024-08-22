@@ -65,6 +65,11 @@
                      I'm always interested in learning new things, not just technology. I'd like to learn to sing and play musical instruments.
                      Then, as a Mentor, I intend to assist graduated students.
                   </p>
+                  <p>
+                     To refresh the technical mind, I will do the carpendering works with my group. In that I will make the bearo's, cots, chairs, window's not a OS ): doors, etc.,
+                     And also, I will participate as a Moi Writer in <a href="#" id="loadMVPage" data-url="moi_virunthu_vizha.html" style="color: #ac2bac; text-decoration: none; ">Moi Virundhu Viazha</a>
+                  </p>
+
                   <table>
                      <tr>
                         <th><h3>Education</h3></th>
@@ -154,6 +159,26 @@
 
           
          document.getElementById('loadProjectPage').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Prevent the default link behavior
+
+         const url = this.getAttribute('data-url'); // Get the URL from the data-url attribute
+
+         fetch(url).then(response => {
+                  if (!response.ok) {
+                     throw new Error('Network response was not ok');
+                  }
+                  return response.text(); // Parse it as text
+            })
+            .then(html => {
+                  document.getElementById('box').innerHTML = html; // Insert the HTML into the content div
+            })
+            .catch(error => {
+                  console.error('There was a problem with the fetch operation:', error);
+            });
+          });
+
+          document.getElementById('loadMVPage').addEventListener('click', function(event) {
             event.preventDefault();
             // Prevent the default link behavior
 
